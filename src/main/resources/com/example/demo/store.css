@@ -1,0 +1,131 @@
+/* === Global Sci-Fi Theme === */
+.store-root {
+    -fx-background-color: linear-gradient(to bottom right, #030b20, #0a1433, #0b1a42);
+    -fx-font-family: "Orbitron", "Segoe UI", sans-serif;
+    -fx-text-fill: #00eaff;
+}
+
+/* === Top Bar === */
+.top-bar {
+    -fx-background-color: rgba(10, 20, 60, 0.85);
+    -fx-border-color: linear-gradient(to right, #00eaff, #00ffaa);
+    -fx-border-width: 0 0 2 0;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, #00eaff, 10, 0.3, 0, 1);
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00eaff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-color: #00eaff;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10;
+}
+.back-button:hover {
+    -fx-background-color: #00eaff;
+    -fx-text-fill: #021025;
+}
+
+.title-label {
+    -fx-text-fill: #00ffaa;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #00ffaa, 10, 0.5, 0, 0);
+}
+
+.coins-label-top {
+    -fx-text-fill: #00eaff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* === TitledPane === */
+.pane {
+    -fx-background-color: rgba(5, 15, 40, 0.9);
+    -fx-text-fill: #00eaff;
+    -fx-border-color: linear-gradient(to right, #00eaff, #0077ff);
+    -fx-border-radius: 10;
+    -fx-border-width: 1.5;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, #00aaff, 15, 0.3, 0, 2);
+}
+
+.titled-pane > .title {
+    -fx-background-color: linear-gradient(to right, #021025, #041b3d);
+    -fx-text-fill: #00eaff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 0 0;
+}
+
+/* === Labels === */
+.label {
+    -fx-text-fill: #d8faff;
+}
+
+/* === TextField === */
+.text-field {
+    -fx-background-color: rgba(20, 40, 80, 0.8);
+    -fx-text-fill: #00ffaa;
+    -fx-border-color: #00eaff;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+}
+.text-field:focused {
+    -fx-border-color: #00ffaa;
+    -fx-effect: dropshadow(gaussian, #00ffaa, 10, 0.3, 0, 0);
+}
+
+/* === Buttons === */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #00eaff, #0077ff);
+    -fx-text-fill: #021025;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 6 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #00eaff, 10, 0.3, 0, 0);
+    -fx-transition: 0.2s;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #00ffaa, #00ccff);
+    -fx-text-fill: #021025;
+}
+
+/* === Item Boxes === */
+.item-box {
+    -fx-background-color: rgba(0, 20, 60, 0.7);
+    -fx-border-color: linear-gradient(to bottom, #00eaff, #0077ff);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, #00eaff, 10, 0.2, 0, 1);
+    -fx-min-width: 130;
+}
+.item-box:hover {
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, #00ffaa, 15, 0.5, 0, 2);
+    -fx-background-color: rgba(0, 30, 90, 0.9);
+}
+
+/* === ScrollPane === */
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* === Glow Animation for Buttons === */
+@keyframes glow {
+    from { -fx-effect: dropshadow(gaussian, #00eaff, 5, 0.2, 0, 0); }
+    to { -fx-effect: dropshadow(gaussian, #00ffaa, 15, 0.5, 0, 0); }
+}

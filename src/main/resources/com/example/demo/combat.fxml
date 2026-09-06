@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.CombatController"
+            stylesheets="@combat.css" prefWidth="800" prefHeight="500" styleClass="root">
+
+    <!-- Back Button -->
+    <Button fx:id="backButton" text="← Back" onAction="#onBackClick"
+            layoutX="20" layoutY="20" styleClass="back-btn"/>
+
+    <!-- Central VBox for Modes -->
+    <VBox alignment="CENTER" spacing="30" layoutX="250" layoutY="200" styleClass="center-box">
+        <Button fx:id="singlePlayerButton" text="SINGLE PLAYER MODE"
+                onAction="#onSinglePlayerClick" styleClass="mode-btn"/>
+        <Button fx:id="multiPlayerButton" text="MULTIPLAYER MODE"
+                onAction="#onMultiPlayerClick" styleClass="mode-btn"/>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="rankingRoot" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.RankingController"
+            stylesheets="@ranking.css">
+
+    <VBox spacing="18" alignment="TOP_CENTER"
+          AnchorPane.topAnchor="12" AnchorPane.leftAnchor="12"
+          AnchorPane.rightAnchor="12" AnchorPane.bottomAnchor="12">
+
+        <!-- Top bar: dark semi-transparent bar (fixed white bar removed) -->
+        <HBox spacing="12" alignment="CENTER_LEFT" styleClass="top-bar" prefHeight="66" prefWidth="900">
+            <Label text="🚀 RANKINGS" styleClass="ranking-title"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <ComboBox fx:id="filterCombo" promptText="Show" prefWidth="180" styleClass="filter-combo"/>
+            <Button fx:id="backButton" text="⬅ Back" styleClass="back-button"/>
+        </HBox>
+
+        <!-- Table area -->
+        <TableView fx:id="rankingTable" prefHeight="520" prefWidth="900" styleClass="ranking-table"/>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,29 @@
+.root {
+    -fx-background-image: url("combatloader1.gif");
+             -fx-background-repeat: no-repeat;
+             -fx-background-size: cover;
+             -fx-background-position: center center;
+             -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.loading-text {
+    -fx-text-fill: #00ffff;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #00ffff, 3, 0.2, 0, 0);
+}
+
+.subtext {
+    -fx-text-fill: #ff00ff;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, #ff00ff, 3, 0.2, 0, 0);
+}
+
+.loading-bar {
+    -fx-accent: #00ffff;
+    -fx-background-color: transparent;
+    -fx-border-color: #00ffff;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, #00ffff, 2, 0.1, 0, 0);
+}

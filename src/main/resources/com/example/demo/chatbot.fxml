@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.ChatbotController"
+            stylesheets="@chatbot.css">
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" prefWidth="600" prefHeight="400">
+            <TextArea fx:id="chatArea" editable="false" wrapText="true" prefHeight="350"/>
+            <HBox spacing="10">
+                <TextField fx:id="userInput" promptText="Type your message..." HBox.hgrow="ALWAYS"/>
+                <Button text="Send" onAction="#onSendClick" fx:id="sendButton"/>
+                <Button text="Back" onAction="#onBackClick" fx:id="backButton"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,50 @@
+.root {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 80%, #03001e, #000000);
+    -fx-background-image: url("Combatmode.gif");
+         -fx-background-repeat: no-repeat;
+         -fx-background-size: cover;
+         -fx-background-position: center center;
+         -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.center-box {
+    -fx-alignment: center;
+}
+
+.mode-btn {
+    -fx-font-size: 20px;
+    -fx-text-fill: #00ffff;
+    -fx-background-color: transparent;
+    -fx-border-color: #00ffff;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-padding: 15 40;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #00ffff, 2, 0.1, 0, 0);
+    -fx-font-weight: bold;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.mode-btn:hover {
+    -fx-background-color: rgba(0, 255, 255, 0.15);
+    -fx-effect: dropshadow(gaussian, #00e6ff, 4, 0.2, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.back-btn {
+    -fx-text-fill: #ff00ff;
+    -fx-font-size: 16px;
+    -fx-background-color: transparent;
+    -fx-border-color: #ff00ff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(gaussian, #ff00ff, 10, 0.5, 0, 0);
+    -fx-cursor: hand;
+}
+
+.back-btn:hover {
+    -fx-background-color: rgba(255, 0, 255, 0.2);
+    -fx-effect: dropshadow(gaussian, #ff33ff, 20, 0.6, 0, 0);
+}

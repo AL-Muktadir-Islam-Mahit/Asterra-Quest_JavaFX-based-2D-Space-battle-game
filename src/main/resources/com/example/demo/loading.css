@@ -1,0 +1,21 @@
+.root {
+    -fx-background-image: url("LoadingView.png");
+    -fx-background-repeat: no-repeat;
+        -fx-background-size: cover;
+      -fx-background-position: center center;
+}
+
+.loading-title {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.loading-percent {
+    -fx-font-size: 16px;
+    -fx-text-fill: lightgray;
+}
+
+.progress-bar {
+    -fx-accent: #00ffcc; /* cyan color er glow */
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.demo.SplashController"
+           alignment="CENTER"
+           stylesheets="@splash.css">
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label fx:id="titleLabel" text="AsterraQuest" styleClass="splash-title">
+            <effect>
+                <DropShadow color="cyan" radius="90" spread="0.5"/>
+            </effect>
+        </Label>
+        <Label fx:id="subtitleLabel" text="powered by UIU_Entropy" styleClass="splash-subtitle">
+            <effect>
+                <Glow level="0.9"/>
+            </effect>
+        </Label>
+    </VBox>
+
+</StackPane>

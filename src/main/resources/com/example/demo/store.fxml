@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ScrollPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.StoreController"
+            stylesheets="@store.css" styleClass="store-root"
+            prefWidth="800" prefHeight="500">
+
+    <!-- Top bar -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="top-bar">
+            <padding>
+                <Insets top="10" bottom="10" left="10" right="10"/>
+            </padding>
+            <Button text="← Back" onAction="#onBack" styleClass="back-button"/>
+            <Label text="Store" styleClass="title-label"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="coinsLabel" text="Coins: 0" styleClass="coins-label-top"/>
+        </HBox>
+    </top>
+
+    <!-- Scrollable center content -->
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+            <VBox spacing="20" alignment="TOP_CENTER">
+                <padding>
+                    <Insets top="20" bottom="20" left="20" right="20"/>
+                </padding>
+
+                <!-- Buy Coins -->
+                <TitledPane text="Buy Coins (via bKash)" expanded="true" styleClass="pane" maxWidth="750">
+                    <VBox spacing="10">
+                        <padding>
+                            <Insets top="10" bottom="10" left="10" right="10"/>
+                        </padding>
+                        <Label text="Enter Taka amount to buy coins (example: 100 = 100 coins)" wrapText="true"/>
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <TextField fx:id="takaField" promptText="Enter amount (Taka)" />
+                            <Button fx:id="buyCoinButton" text="Buy Coin" />
+                        </HBox>
+                        <Label text="After clicking Buy Coin, you will see the bKash number and account name to send payment." wrapText="true"/>
+                    </VBox>
+                </TitledPane>
+
+                <!-- Buy Images -->
+                <TitledPane text="Buy Images (use in-game coins)" expanded="true" styleClass="pane" maxWidth="750">
+                    <VBox spacing="12">
+                        <padding>
+                            <Insets top="10" bottom="10" left="10" right="10"/>
+                        </padding>
+                        <Label text="Click Buy to purchase one of the images. A mail window will open to notify the seller. Coins will be deducted." wrapText="true"/>
+
+                        <!-- Scroll horizontally for images -->
+                        <ScrollPane hbarPolicy="AS_NEEDED" vbarPolicy="NEVER" fitToHeight="true" prefViewportWidth="750">
+                            <HBox fx:id="itemsBox" spacing="12" alignment="CENTER_LEFT">
+                                <!-- Item 1 -->
+                                <VBox fx:id="item1Box" spacing="6" alignment="CENTER" styleClass="item-box">
+                                    <ImageView fx:id="img1View" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+                                    <Label text="Book" />
+                                    <Label text="Price: 50" />
+                                    <Button fx:id="buyImg1" text="Buy (50)" />
+                                </VBox>
+
+                                <!-- Item 2 -->
+                                <VBox fx:id="item2Box" spacing="6" alignment="CENTER" styleClass="item-box">
+                                    <ImageView fx:id="img2View" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+                                    <Label text="Book" />
+                                    <Label text="Price: 70" />
+                                    <Button fx:id="buyImg2" text="Buy (70)" />
+                                </VBox>
+
+                                <!-- Item 3 -->
+                                <VBox fx:id="item3Box" spacing="6" alignment="CENTER" styleClass="item-box">
+                                    <ImageView fx:id="img3View" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+                                    <Label text="Book" />
+                                    <Label text="Price: 90" />
+                                    <Button fx:id="buyImg3" text="Buy (90)" />
+                                </VBox>
+
+                                <!-- Item 4 -->
+                                <VBox fx:id="item4Box" spacing="6" alignment="CENTER" styleClass="item-box">
+                                    <ImageView fx:id="img4View" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+                                    <Label text="Globe" />
+                                    <Label text="Price: 120" />
+                                    <Button fx:id="buyImg4" text="Buy (120)" />
+                                </VBox>
+
+                                <!-- Item 5 -->
+                                <VBox fx:id="item5Box" spacing="6" alignment="CENTER" styleClass="item-box">
+                                    <ImageView fx:id="img5View" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+                                    <Label text="Telescop" />
+                                    <Label text="Price: 200" />
+                                    <Button fx:id="buyImg5" text="Buy (200)" />
+                                </VBox>
+                            </HBox>
+                        </ScrollPane>
+                    </VBox>
+                </TitledPane>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,38 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-control-inner-background: #1a1a1a;
+    -fx-text-fill: #00ffcc;
+    -fx-highlight-fill: #00ffcc44;
+    -fx-highlight-text-fill: white;
+    -fx-border-color: #00ffcc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+}
+
+.text-field {
+    -fx-background-color: #222;
+    -fx-text-fill: #00ffcc;
+    -fx-border-color: #00ffcc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 5;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #00c6ff, #0072ff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #0072ff, #00c6ff);
+    -fx-cursor: hand;
+}

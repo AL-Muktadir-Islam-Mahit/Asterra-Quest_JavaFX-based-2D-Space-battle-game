@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.CombatLoaderController"
+            stylesheets="@combatloader.css" prefWidth="800" prefHeight="500" styleClass="root">
+
+    <VBox alignment="CENTER" spacing="22" prefWidth="800" prefHeight="500">
+        <Label fx:id="loadingLabel" text="Initializing..." styleClass="loading-text"/>
+        <ProgressBar fx:id="loadingBar" prefWidth="400" progress="0" styleClass="loading-bar"/>
+        <Label text="Aim and shoottttt..." styleClass="subtext"/>
+    </VBox>
+
+</AnchorPane>

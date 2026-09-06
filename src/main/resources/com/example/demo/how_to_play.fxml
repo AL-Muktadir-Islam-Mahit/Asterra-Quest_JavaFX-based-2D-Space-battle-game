@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.HowToPlayController"
+            stylesheets="@how_to_play.css"
+            styleClass="background-pane">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="top-bar">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+            <Button text="← Back" styleClass="top-button" onAction="#onBackClick"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true" styleClass="scroll-pane">
+            <content>
+                <VBox alignment="CENTER" spacing="15" styleClass="glass-box" maxWidth="600">
+                    <Label text="🚀 HOW TO PLAY 🚀" styleClass="title-label"/>
+                    <Label text="• This is A 2D space shooter game" styleClass="info-label"/>
+                    <Label text="• Motive of this game is 2 create curiosity among child about space and astronomy" styleClass="info-label"/>
+                    <Label text="• This game has 2 parts" styleClass="info-label"/>
+                    <Label text="• First one is a open world game" styleClass="info-label"/>
+                    <Label text="• In this mode you will explore solar system and learn about it" styleClass="info-label"/>
+                    <Label text="• In this mode you have to complete mission to earn coins" styleClass="info-label"/>
+                    <Label text="• Second part is combat mode" styleClass="info-label"/>
+                    <Label text="• In combat mode you get two options singleplayer and multiplayer" styleClass="info-label"/>
+                    <Label text="• In single player you destroy others’ ships as much as you can" styleClass="info-label"/>
+                    <Label text="• In multiplayer you compete with your friend in a 30 seconds match" styleClass="info-label"/>
+                    <Label text="• Whoever destroys more in 30 seconds wins" styleClass="info-label"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

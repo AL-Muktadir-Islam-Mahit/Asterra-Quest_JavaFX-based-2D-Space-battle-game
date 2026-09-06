@@ -1,0 +1,26 @@
+.root {
+    -fx-background-image: url("aboutbg.jpeg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.back-button {
+    -fx-background-color: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 6 15 6 15;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.nav-button {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-background-radius: 50%;
+    -fx-cursor: hand;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+}

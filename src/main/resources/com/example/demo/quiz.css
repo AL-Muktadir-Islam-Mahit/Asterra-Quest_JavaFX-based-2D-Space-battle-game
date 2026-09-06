@@ -1,0 +1,105 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1a1a2e, #16213e);
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+
+    -fx-background-image: url("quizimage.gif");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+/* Back Button */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #4a90e2;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+}
+.back-button:hover {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+}
+
+/* Title */
+.title-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 6, 0, 0, 3);
+}
+
+/* Question Label */
+.question-label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+/* RadioButton Options */
+.option-radio {
+    -fx-text-fill: #dcdcdc;
+    -fx-font-size: 16px;
+}
+.option-radio:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Next Button */
+.next-button {
+    -fx-background-color: linear-gradient(to right, #4a90e2, #357ab8);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 2);
+}
+.next-button:hover {
+    -fx-background-color: linear-gradient(to right, #5aa0f2, #4689d0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #4a90e2;
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 5;
+    -fx-pref-height: 12px;
+}
+
+/* Result Label */
+.result-label {
+    -fx-text-fill: #ffcc00;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 6, 0, 0, 3);
+}
+
+/* level buttom */
+
+.level-button {
+    -fx-background-color: linear-gradient(to right, #ff9800, #f57c00);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 25;
+    -fx-padding: 12 40;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 3);
+    -fx-transition: all 0.2s ease-in-out;
+}
+.level-button:hover {
+    -fx-background-color: linear-gradient(to right, #ffa733, #ff8f00);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}

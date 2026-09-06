@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.WorldChat"
+            stylesheets="@WorldChat.css">
+
+    <!-- Top Title -->
+    <top>
+        <Label text="🌍 World Chat Room" id="chatTitle"/>
+
+    </top>
+
+    <!-- Chat Display -->
+    <center>
+        <TextArea fx:id="chatArea" editable="false" wrapText="true" id="chatArea"/>
+    </center>
+
+    <!-- Input & Send Button -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <TextField fx:id="messageField" promptText="Type your message..." HBox.hgrow="ALWAYS"/>
+            <Button text="Send" onAction="#onSendClick" id="sendBtn"/>
+            <Button text="Back" onAction="#onBackClick" id="backBtn"/>
+        </HBox>
+    </bottom>
+</BorderPane>

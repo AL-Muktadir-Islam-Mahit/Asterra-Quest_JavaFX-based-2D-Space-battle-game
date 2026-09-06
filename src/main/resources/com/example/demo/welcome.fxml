@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.WelcomeController"
+      alignment="CENTER"
+      spacing="30"
+      stylesheets="@style.css"
+      styleClass="welcome-root">
+
+    <Label text="Hey, cosmonaut, are you ready?" styleClass="welcome-text"/>
+    <Button text="Yes" onAction="#goToLogin" styleClass="welcome-button"/>
+
+</VBox>

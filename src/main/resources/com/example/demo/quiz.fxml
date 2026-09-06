@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.QuizController"
+            stylesheets="@quiz.css">
+
+    <!-- Top bar with Back button + ProgressBar -->
+    <top>
+        <VBox spacing="10">
+            <HBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="5" left="10"/>
+                </padding>
+                <Button fx:id="backButton" text="Back" onAction="#onBackClick" styleClass="back-button"/>
+            </HBox>
+
+        </VBox>
+    </top>
+
+    <!-- Center content -->
+    <center>
+        <StackPane>
+            <!-- Level Selection -->
+            <VBox fx:id="levelBox" alignment="CENTER" spacing="20">
+                <Label text="Select Level" styleClass="title-label"/>
+                <Button text="Level 1" onAction="#onLevel1Click" styleClass="level-button"/>
+                <Button text="Level 2" onAction="#onLevel2Click" styleClass="level-button"/>
+                <Button text="Level 3" onAction="#onLevel3Click" styleClass="level-button"/>
+                <Button text="Kardeshev Scale" onAction="#onLevel4Click" styleClass="level-button"/>
+
+                <!-- More levels can be added here -->
+            </VBox>
+
+            <!-- Quiz Box -->
+            <VBox fx:id="questionBox" spacing="20" alignment="CENTER" visible="false">
+                <Label fx:id="questionLabel" wrapText="true" styleClass="question-label"/>
+                <VBox spacing="12">
+                    <RadioButton fx:id="option1" styleClass="option-radio"/>
+                    <RadioButton fx:id="option2" styleClass="option-radio"/>
+                    <RadioButton fx:id="option3" styleClass="option-radio"/>
+                    <RadioButton fx:id="option4" styleClass="option-radio"/>
+                </VBox>
+                <Button fx:id="nextButton" text="Next" onAction="#onNextClick" styleClass="next-button"/>
+            </VBox>
+
+            <!-- Result -->
+            <Label fx:id="resultLabel" text="Result" visible="false" styleClass="result-label"/>
+        </StackPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.SettingsController"
+            stylesheets="@settings.css"
+            styleClass="background-pane">
+
+    <top>
+        <!-- Use a StackPane so the title stays perfectly centered while the Back button sits at the left -->
+        <StackPane styleClass="top-bar">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+            <children>
+                <!-- Centered title -->
+                <Label text="Settings" styleClass="title-label" StackPane.alignment="CENTER"/>
+                <!-- Left-aligned back button (same row) -->
+                <HBox alignment="CENTER_LEFT" spacing="10" StackPane.alignment="CENTER_LEFT">
+                    <Button text="← Back" styleClass="top-button" onAction="#goBack"/>
+                </HBox>
+            </children>
+        </StackPane>
+    </top>
+
+    <!-- Place form in the UPPER-LEFT corner -->
+    <center>
+        <StackPane>
+            <children>
+                <VBox spacing="14" styleClass="glass-box" StackPane.alignment="TOP_LEFT">
+                    <padding>
+                        <Insets top="20" right="20" bottom="20" left="20"/>
+                    </padding>
+
+                    <Label text="Change username or password" styleClass="title-label"/>
+
+                    <GridPane hgap="10" vgap="12">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" minWidth="90"/>
+                            <ColumnConstraints halignment="LEFT" minWidth="220"/>
+                        </columnConstraints>
+
+                        <Label text="Username:"
+                               GridPane.rowIndex="0" GridPane.columnIndex="0"
+                               style="-fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+                        <TextField fx:id="usernameField" promptText="Enter new username"
+                                   styleClass="input-field"
+                                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Password:"
+                               GridPane.rowIndex="1" GridPane.columnIndex="0"
+                               style="-fx-text-fill: #ffffff; -fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+                        <PasswordField fx:id="passwordField" promptText="Enter new password"
+                                       styleClass="input-field"
+                                       GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                    </GridPane>
+
+                    <HBox spacing="10">
+                        <Button text="Save" styleClass="save-button" onAction="#handleSaveChanges"/>
+                    </HBox>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+
+</BorderPane>
+

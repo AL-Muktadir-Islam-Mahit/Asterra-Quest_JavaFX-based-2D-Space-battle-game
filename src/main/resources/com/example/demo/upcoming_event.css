@@ -1,0 +1,261 @@
+/* upcoming_event.css — JavaFX 17 compatible neon / sci-fi theme
+   Save as: src/main/resources/com/example/demo/upcoming_event.css
+*/
+
+/* Root window */
+.root {
+    -fx-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -fx-background-color: linear-gradient(#0f1740 0%, #0b0c10 60%);
+    -fx-padding: 0;
+}
+
+/* page wrapper */
+.wrap {
+    -fx-max-width: 1100px;
+    -fx-padding: 18px;
+    -fx-alignment: center-left;
+}
+
+/* header */
+.header {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, rgba(10,12,22,0.88), rgba(8,10,18,0.7));
+    -fx-border-color: rgba(90,215,255,0.08);
+    -fx-border-width: 0 0 1 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 24, 0.4, 0, 6);
+}
+
+/* logo bubble */
+.logo {
+    -fx-pref-width: 42px;
+    -fx-pref-height: 42px;
+    -fx-background-radius: 999px;
+    -fx-background-color: linear-gradient(from 30% 30% to 100% 100%, rgba(90,215,255,0.12), rgba(166,140,255,0.07)), linear-gradient(#5ad7ff, #a68cff);
+    -fx-effect: innershadow(three-pass-box, rgba(168,140,255,0.18), 12, 0.0, 0, 0);
+}
+
+/* titles */
+.h1 {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #e9f0ff;
+    -fx-letter-spacing: 0.2px;
+}
+.subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #bfc9ff;
+    -fx-opacity: 0.95;
+}
+
+/* Controls */
+.controls-area {
+    -fx-padding: 12px 0 0 0;
+}
+
+/* control boxes */
+.control {
+    -fx-background-color: #0f1630;
+    -fx-border-color: rgba(140,160,255,0.12);
+    -fx-background-radius: 14px;
+    -fx-padding: 10 12;
+    -fx-alignment: center-left;
+    -fx-spacing: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.38), 18, 0.2, 0, 6);
+}
+.control .text-field, .control .combo-box {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-text-fill: #e9f0ff;
+}
+
+/* chips */
+.chips {
+    -fx-padding: 12 0 0 0;
+    -fx-hgap: 8;
+    -fx-vgap: 8;
+}
+.chip {
+    -fx-background-color: linear-gradient(#1b2355, #161c3c);
+    -fx-border-color: rgba(138,160,255,0.16);
+    -fx-padding: 6 10;
+    -fx-background-radius: 999px;
+    -fx-text-fill: #bfc9ff;
+    -fx-font-size: 12px;
+}
+
+/* stats */
+.stats .stat {
+    -fx-background-color: #0f1630;
+    -fx-padding: 8 12;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #bfc9ff;
+    -fx-font-size: 13px;
+}
+
+/* grid */
+.grid {
+    -fx-hgap: 16px;
+    -fx-vgap: 16px;
+    -fx-padding: 18px;
+}
+
+/* card */
+.card {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, rgba(255,255,255,0.02), transparent);
+    -fx-border-color: rgba(138,160,255,0.12);
+    -fx-background-radius: 16px;
+    -fx-padding: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.38), 20, 0.2, 0, 8);
+    -fx-pref-width: 320px;
+    -fx-spacing: 10px;
+    -fx-alignment: top-left;
+}
+
+/* badge */
+.badge {
+    -fx-rotate: 12;
+    -fx-translate-y: -6;
+    -fx-alignment: center;
+    -fx-background-color: linear-gradient(#1b2355, rgba(166,140,255,0.06));
+    -fx-padding: 6 14;
+    -fx-background-radius: 999px;
+    -fx-border-color: rgba(138,160,255,0.22);
+    -fx-text-fill: #bfc9ff;
+    -fx-font-weight: 600;
+}
+
+/* when + dot */
+.when {
+    -fx-font-weight: 600;
+    -fx-text-fill: #d6ddff;
+    -fx-alignment: center-left;
+    -fx-spacing: 8px;
+}
+.dot {
+    -fx-min-width: 8px;
+    -fx-min-height: 8px;
+    -fx-background-color: #29d08b;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(41,208,139,0.45), 6, 0.2, 0, 0);
+}
+
+/* heading + description */
+.title2 {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #e9f0ff;
+}
+.desc {
+    -fx-text-fill: #bfc9ff;
+    -fx-font-size: 14px;
+}
+
+/* meta tags */
+.meta {
+    -fx-hgap: 8;
+    -fx-vgap: 6;
+}
+.tag {
+    -fx-background-color: rgba(138,160,255,0.06);
+    -fx-border-color: rgba(138,160,255,0.18);
+    -fx-padding: 4 8;
+    -fx-background-radius: 999px;
+    -fx-text-fill: #dfe6ff;
+    -fx-font-size: 11px;
+}
+
+/* CTA buttons */
+.cta { -fx-spacing: 8; -fx-padding: 6 0 0 0; }
+.btn {
+    -fx-background-color: #0f1630;
+    -fx-border-color: rgba(138,160,255,0.16);
+    -fx-background-radius: 10px;
+    -fx-padding: 8 10;
+    -fx-text-fill: #e9f0ff;
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+}
+.btn:hover {
+    -fx-effect: dropshadow(gaussian, rgba(90,215,255,0.12), 12, 0.2, 0, 2);
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+.btn.primary {
+    -fx-background-color: linear-gradient(#5ad7ff, #a68cff);
+    -fx-text-fill: #081025;
+    -fx-border-color: transparent;
+}
+
+/* footer */
+.footer-text {
+    -fx-text-fill: #bfc9ff;
+    -fx-font-size: 13px;
+}
+
+/* small responsive helper (JavaFX doesn't support @media; keep small rule) */
+.card.small {
+    -fx-pref-width: 260px;
+}
+
+/* updated card appearance for neon blur/glow */
+
+.card {
+    -fx-background-color: rgba(10,12,28,0.55);      /* darker translucent panel */
+    -fx-border-color: rgba(90,150,255,0.10);        /* faint cool border */
+    -fx-border-width: 1;
+    -fx-background-radius: 16px;
+    -fx-padding: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.45), 18, 0.2, 0, 8);
+    -fx-pref-width: 320px;
+    -fx-spacing: 10px;
+    -fx-alignment: top-left;
+}
+
+/* subtle frosted highlight line across top */
+.card::focused, .card:focused { /* no-op but keeps selector idea for future */
+}
+
+/* optional neon accent class (used by controller) */
+.card.neon {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, rgba(8,10,22,0.56), rgba(12,14,28,0.44));
+    -fx-border-color: rgba(90,215,255,0.12);
+}
+
+/* make the badge a little more glassy so the glow plays nicely */
+.badge {
+    -fx-rotate: 12;
+    -fx-translate-y: -6;
+    -fx-alignment: center;
+    -fx-background-color: rgba(27,35,85,0.75);
+    -fx-padding: 6 14;
+    -fx-background-radius: 999px;
+    -fx-border-color: rgba(138,160,255,0.18);
+    -fx-text-fill: #dfe6ff;
+    -fx-font-weight: 600;
+    -fx-opacity: 0.95;
+}
+
+/* larger, softer dot so the glow is visible */
+.dot {
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-background-color: #29d08b;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(41,208,139,0.45), 8, 0.2, 0, 0);
+}
+
+/* small extra: outer glow layer uses pseudo-class .glow on the card (controller adds effect programmatically) */
+.card.glow {
+    /* keep CSS fallback: slight outer halo using border */
+    -fx-border-color: rgba(90,215,255,0.18);
+}
+.back-btn {
+    -fx-background-color: linear-gradient(#5ad7ff, #a68cff);
+    -fx-text-fill: #081025;
+    -fx-font-weight: 600;
+    -fx-background-radius: 12px;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+.back-btn:hover {
+    -fx-effect: dropshadow(gaussian, rgba(90,215,255,0.4), 12, 0.2, 0, 0);
+}

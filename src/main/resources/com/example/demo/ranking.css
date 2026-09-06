@@ -1,0 +1,134 @@
+/* Root + general */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #030615, #00020a);
+    -fx-font-family: "Orbitron", "Segoe UI", sans-serif;
+}
+
+/* Top bar (replaces the bright white bar) */
+.top-bar {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, rgba(3,6,21,0.75), rgba(6,10,20,0.6));
+    -fx-padding: 12 18;
+    -fx-border-color: rgba(0,229,255,0.08);
+    -fx-border-width: 0 0 1 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 6, 0.3, 0, 2);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* Title in top bar */
+.ranking-title {
+    -fx-text-fill: #9ff7ff;
+    -fx-font-size: 20px;
+    -fx-font-weight: 700;
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,0.12), 6, 0.1, 0, 1);
+    -fx-padding: 0 6 0 6;
+}
+
+/* ComboBox (filter) styling */
+.filter-combo {
+    -fx-background-color: rgba(5,10,20,0.6);
+    -fx-border-color: rgba(0,229,255,0.14);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 8;
+    -fx-font-size: 13px;
+    -fx-text-fill: #bffcff;
+}
+.filter-combo .arrow-button {
+    -fx-background-color: transparent;
+}
+.filter-combo .arrow {
+    -fx-shape: "M 0 0 L 8 0 L 4 5 Z";
+    -fx-background-color: transparent;
+    -fx-fill: #00e6ff;
+}
+.combo-box .list-view {
+    -fx-background-color: rgba(3,6,15,0.95);
+}
+.combo-box .list-cell {
+    -fx-text-fill: #bffcff;
+    -fx-padding: 8 12;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: rgba(0,229,255,0.08);
+    -fx-text-fill: #001;
+}
+
+/* Back button */
+.back-button {
+    -fx-background-color: rgba(0,229,255,0.08);
+    -fx-border-color: rgba(0,229,255,0.16);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #bffcff;
+    -fx-font-weight: 700;
+    -fx-padding: 6 14;
+}
+.back-button:hover {
+    -fx-background-color: rgba(0,229,255,0.18);
+    -fx-text-fill: #001;
+}
+
+/* Table global */
+.ranking-table {
+    -fx-background-color: rgba(3,6,15,0.0);
+    -fx-border-color: rgba(0,229,255,0.06);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, rgba(2,7,18,0.75), rgba(5,10,20,0.55));
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: #cfffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: 800;
+    -fx-padding: 8 12;
+    -fx-alignment: CENTER_LEFT;
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,0.10), 4, 0.05, 0, 1);
+}
+
+
+.table-cell {
+    -fx-padding: 10 12 10 12;
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #e8ffff;
+    -fx-alignment: CENTER_LEFT;
+}
+
+
+.table-view .table-row-cell .table-cell:filled:focused {
+    -fx-text-fill: #ffffff;
+}
+
+/* Row visuals */
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+.table-row-cell:odd {
+    -fx-background-color: rgba(0,229,255,0.02);
+}
+.table-row-cell:selected {
+    -fx-background-color: rgba(0,229,255,0.12);
+    -fx-text-fill: #001;
+}
+
+
+.table-cell {
+    -fx-effect: dropshadow(gaussian, rgba(0,229,255,0.06), 3, 0.05, 0, 1);
+}
+
+
+.table-view .filler {
+    -fx-max-width: 0;
+    -fx-pref-width: 0;
+    -fx-min-width: 0;
+}
+
+

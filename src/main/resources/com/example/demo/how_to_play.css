@@ -1,0 +1,52 @@
+.background-pane {
+    -fx-background-image: url("HomePage.gif");
+    -fx-background-size: cover;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.top-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-background-radius: 0 0 10 10;
+}
+
+.top-button {
+    -fx-background-color: linear-gradient(to bottom, #444, #222);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.glass-box {
+    -fx-background-color: rgba(20, 20, 30, 0.55); /* darker for better contrast */
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 0.4), 25, 0.5, 0, 0);
+}
+
+.title-label {
+    -fx-text-fill: linear-gradient(#00f7ff, #00b8d4);
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 255, 0.4), 5, 0.4, 0, 0);
+    -fx-letter-spacing: 1px;
+}
+
+.info-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 3, 0.5, 1, 1),
+                dropshadow(gaussian, rgba(0, 255, 200, 0.4), 5, 0.6, 0, 0);
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,18 @@
+AnchorPane {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 70%, #01010f, #000000);
+}
+
+.back-btn {
+    -fx-text-fill: #ff00ff;
+    -fx-font-size: 16px;
+    -fx-background-color: transparent;
+    -fx-border-color: #ff00ff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 6 20;
+    -fx-effect: dropshadow(gaussian, #ff00ff, 15, 0.6, 0, 0);
+    -fx-cursor: hand;
+}
+.back-btn:hover {
+    -fx-background-color: rgba(255,0,255,0.2);
+}

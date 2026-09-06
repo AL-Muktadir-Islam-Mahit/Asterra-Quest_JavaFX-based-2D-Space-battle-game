@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.demo.CosmicController"
+            stylesheets="@upcoming_event.css">
+
+    <!-- TOP: Header + Controls -->
+    <top>
+        <VBox>
+
+            <!-- Header -->
+            <HBox styleClass="header">
+                <HBox styleClass="wrap title-row" spacing="12" alignment="CENTER_LEFT">
+                    <Button fx:id="backBtn" text="← Back" styleClass="back-btn" onAction="#handleBack"/>
+                    <StackPane prefWidth="42" prefHeight="42" styleClass="logo"/>
+                    <VBox>
+                        <Label text="Cosmic Watch" styleClass="h1"/>
+                        <!-- ampersand must be escaped in XML -->
+                        <Label text="Upcoming astronomical &amp; cosmological events — meteor showers, eclipses, planet parades, novae, supernovae, and more. All times localized to your device."
+                               wrapText="true" styleClass="subtitle" maxWidth="800"/>
+                    </VBox>
+                </HBox>
+            </HBox>
+
+            <!-- Controls area -->
+            <VBox styleClass="wrap controls-area">
+                <GridPane hgap="10" vgap="8" styleClass="controls">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="45"/>
+                        <ColumnConstraints percentWidth="18.33"/>
+                        <ColumnConstraints percentWidth="18.33"/>
+                        <ColumnConstraints percentWidth="18.33"/>
+                    </columnConstraints>
+
+                    <!-- Search -->
+                    <HBox styleClass="control" GridPane.columnIndex="0" alignment="CENTER_LEFT" spacing="8">
+                        <Label text="🔎"/>
+                        <TextField fx:id="searchField" promptText="Search events (e.g., Perseids, eclipse, nova)" HBox.hgrow="ALWAYS"/>
+                    </HBox>
+
+                    <!-- Month -->
+                    <HBox styleClass="control" GridPane.columnIndex="1" alignment="CENTER_LEFT" spacing="8">
+                        <Label text="🗓️"/>
+                        <ComboBox fx:id="monthCombo" HBox.hgrow="ALWAYS"/>
+                    </HBox>
+
+                    <!-- Sort -->
+                    <HBox styleClass="control" GridPane.columnIndex="2" alignment="CENTER_LEFT" spacing="8">
+                        <Label text="↕️"/>
+                        <ComboBox fx:id="sortCombo" HBox.hgrow="ALWAYS"/>
+                    </HBox>
+
+                    <!-- Reset -->
+                    <Button fx:id="resetBtn" text="♻️ Reset" styleClass="control" GridPane.columnIndex="3"/>
+                </GridPane>
+
+                <!-- Category chips -->
+                <FlowPane fx:id="chipsPane" hgap="8" vgap="8" styleClass="chips" prefWrapLength="1000"/>
+
+                <!-- Stats row -->
+                <HBox fx:id="statsBox" spacing="8" styleClass="stats"/>
+            </VBox>
+        </VBox>
+    </top>
+
+    <!-- CENTER: Grid of cards inside scroll pane -->
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" styleClass="wrap">
+            <TilePane fx:id="gridPane" prefColumns="3" hgap="16" vgap="16" styleClass="grid">
+                <padding>
+                    <!-- proper Insets instead of padding="18" -->
+                    <Insets top="18" right="18" bottom="18" left="18"/>
+                </padding>
+                <!-- Cards are added dynamically by controller -->
+            </TilePane>
+        </ScrollPane>
+    </center>
+
+    <!-- FOOTER -->
+    <bottom>
+        <HBox styleClass="wrap footer">
+            <Label text="Tip: click Add to calendar to download an"
+                   wrapText="true" styleClass="footer-text" maxWidth="1100"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

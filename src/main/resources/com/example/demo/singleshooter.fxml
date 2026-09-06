@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.SingleShooterController"
+            fx:id="rootPane"
+            stylesheets="@singleshooter.css" prefWidth="800" prefHeight="500">
+
+    <Canvas fx:id="gameCanvas" width="800" height="500" />
+
+    <Button fx:id="backButton" text="← Back"
+            layoutX="700" layoutY="3"
+            onAction="#onBackClick" styleClass="back-btn"/>
+</AnchorPane>

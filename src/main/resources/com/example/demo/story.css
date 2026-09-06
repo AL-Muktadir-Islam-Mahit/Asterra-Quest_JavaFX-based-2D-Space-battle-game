@@ -1,0 +1,32 @@
+.root {
+    -fx-background-image: url("welcome3.gif");
+         -fx-background-repeat: no-repeat;
+         -fx-background-size: cover;
+         -fx-background-position: center center;
+        -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.story-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-padding: 20px;
+    -fx-background-color: rgba(30, 30, 30, 0.8);
+    -fx-background-radius: 15;
+    -fx-border-color: cyan;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+}
+
+.story-button {
+    -fx-background-color: linear-gradient(to bottom, #00ffff, #006666);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.story-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #00cccc, #004444);
+}

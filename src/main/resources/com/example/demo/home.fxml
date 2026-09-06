@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.HomeController"
+            stylesheets="@home.css"
+            styleClass="background-pane">
+
+    <!-- Top bar at the very top -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="top-bar">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+
+            <Button fx:id="profileButton" text="Profile" styleClass="top-button" onAction="#onProfileClick"/>
+            <Button fx:id="PlayQuiz" text="Play Quiz To Earn Coins" styleClass="top-button" onAction="#onPlayQuiz"/>
+
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Button fx:id="storeButton" text="Store" styleClass="top-button" onAction="#onStoreClick"/>
+            <Label fx:id="coinsLabel" text="Coins: 0" styleClass="coins-label"/>
+        </HBox>
+    </top>
+
+    <!-- Center content with floating button -->
+    <center>
+        <StackPane>
+            <!-- Optional spaceship background -->
+            <!--
+            <ImageView fx:id="spaceshipImage" fitWidth="300" preserveRatio="true" styleClass="spaceship"/>
+            -->
+
+            <!-- Floating button top-right -->
+
+
+            <Button fx:id="WorldChat" text="Talk with felow astronaut" styleClass="main-button1"
+                    StackPane.alignment="TOP_RIGHT" onAction="#onWorldChatclick">
+                <StackPane.margin>
+                    <Insets top="10" right="10"/>
+                </StackPane.margin>
+            </Button>
+
+            <Button fx:id="Chatbot" text="Ask Your Captain" styleClass="main-button1"
+                    StackPane.alignment="TOP_RIGHT"  onAction="#onchatbotClick">
+                <StackPane.margin>
+                    <Insets top="60" right="10"/>
+                </StackPane.margin>
+            </Button>
+
+            <!-- button on right -->
+
+            <Button fx:id="ranking" text="Ranking" styleClass="main-button1"
+                    StackPane.alignment="TOP_LEFT" onAction="#onrankingclick">
+                <StackPane.margin>
+                    <Insets top="10" left="10"/>
+                </StackPane.margin>
+            </Button>
+            <Button fx:id="events" text="Up coming events" styleClass="main-button1"
+                    StackPane.alignment="TOP_LEFT" onAction="#oneventclick">
+                <StackPane.margin>
+                    <Insets top="60" left="10"/>
+                </StackPane.margin>
+            </Button>
+
+
+
+
+        </StackPane>
+    </center>
+
+    <!-- Bottom bar with both left and right buttons -->
+    <bottom>
+        <HBox alignment="BOTTOM_CENTER" spacing="20">
+            <padding>
+                <Insets bottom="20" left="20" right="20"/>
+            </padding>
+
+            <!-- Bottom-left buttons -->
+            <VBox alignment="BOTTOM_LEFT" spacing="10">
+                <Button fx:id="settingsButton" text="Settings" styleClass="main-button1" onAction="#onSettingsClick"/>
+                <Button fx:id="howToPlayButton" text="How to Play" styleClass="main-button1" onAction="#onHowToPlayClick"/>
+                <Button fx:id="aboutButton" text="Meet the developer" styleClass="main-button1" onAction="#onAboutClick"/>
+            </VBox>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- Bottom-right buttons -->
+            <VBox alignment="BOTTOM_RIGHT" spacing="10">
+                <Button fx:id="openWorldButton" text="Open World" styleClass="main-button" onAction="#onOpenWorldClick"/>
+                <Button fx:id="CombatButton" text="Combat mode" styleClass="main-button" onAction="#onCombatButtonClick"/>
+
+            </VBox>
+        </HBox>
+    </bottom>
+
+</BorderPane>

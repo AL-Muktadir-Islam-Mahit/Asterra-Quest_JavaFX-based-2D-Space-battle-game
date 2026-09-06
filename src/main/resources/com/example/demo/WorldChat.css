@@ -1,0 +1,47 @@
+#chatTitle {
+    -fx-font-size: 22px;
+    -fx-text-fill: #00ffea;
+    -fx-padding: 10;
+    -fx-font-family: "Consolas";
+    -fx-background-color: linear-gradient(to right, #141421, #1f1f33);
+    -fx-alignment: center;
+}
+
+#chatArea {
+    -fx-control-inner-background: #0d0d17;
+    -fx-text-fill: #00ffea;
+    -fx-font-family: "Consolas";
+    -fx-font-size: 14px;
+    -fx-border-color: #00ffea;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10;
+}
+
+#sendBtn {
+    -fx-background-color: linear-gradient(to right, #ff0055, #ff6600);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+
+#backBtn {
+    -fx-background-color: linear-gradient(to right, #ff0055, #ff6600);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.text-field {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #00ffea;
+}

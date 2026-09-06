@@ -1,0 +1,3 @@
+# Copy this file to users.txt before running the game locally.
+# Format: username:password:credits:level:wins:losses
+player:change-me:0:1:0:0

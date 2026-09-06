@@ -1,0 +1,95 @@
+/* Glassmorphic Login Box */
+.glass-box {
+    -fx-background-color: rgba(255, 255, 255, 0.08); /* transparent */
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1.5;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 20, 0.2, 0, 10);
+    -fx-alignment: center;
+}
+
+
+.login-box {
+    -fx-padding: 20;
+    -fx-background-color: rgba(0,0,0,0.5);
+    -fx-background-radius: 15;
+    -fx-border-color: #00f0ff;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+
+    /* Neon glow effect */
+    -fx-effect: dropshadow(gaussian, #00f0ff, 20, 0.8, 0, 0);
+}
+
+
+/* Title */
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-family: "Orbitron", "Consolas", monospace;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #00ffea, 0, 0, 0, 2);
+    -fx-padding: 10 0 20 0;
+}
+
+/* Input fields */
+.text-field, .password-field {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: rgba(255,255,255,0.6);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Login button */
+.login-button {
+    -fx-background-color: linear-gradient(to right, #00f2fe, #4facfe);
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-radius: 12;
+    -fx-cursor: hand;
+}
+.login-button:hover {
+    -fx-background-color: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Back button */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.back-button:hover {
+    -fx-text-fill: #00ffea;
+}
+
+/* Small labels */
+.small-label {
+    -fx-text-fill: #cccccc;
+}
+.hyperlink {
+    -fx-text-fill: #00ffea;
+    -fx-border-color: transparent;
+}
+.hyperlink:hover {
+    -fx-text-fill: #ffffff;
+}
+
+
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #00ffff, #00bfff);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-effect: dropshadow(gaussian, #00ffff, 10, 0.4, 0, 0);
+    -fx-background-color: rgba(255,255,255,0.15);
+}
